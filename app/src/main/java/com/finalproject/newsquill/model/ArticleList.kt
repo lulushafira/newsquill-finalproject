@@ -1,6 +1,8 @@
 package com.finalproject.newsquill.model
 
-data class ArticleListResponse(
+import com.finalproject.newsquill.common.Article
+
+data class ArticleList(
     val articles : List<Article>,
     val totalArticles: Int
 )
