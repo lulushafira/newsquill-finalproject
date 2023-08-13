@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1004355269675",
+    "firebase_url": "https://news-quill-final-project-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "news-quill-final-project",
+    "storage_bucket": "news-quill-final-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004355269675:android:5e875a5e4bf7f5fe93e66e",
+        "android_client_info": {
+          "package_name": "com.finalproject.newsquill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004355269675-f3akjk94qh9igp7nf3rntl9fd6si4nkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnrTZwcgPa8YE58TXQJLecFYfK4S7PeFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004355269675-f3akjk94qh9igp7nf3rntl9fd6si4nkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
