@@ -3,17 +3,17 @@ package com.finalproject.newsquill.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.finalproject.newsquill.common.Article
 import com.finalproject.newsquill.databinding.TopHeadlineItemBinding
-import com.finalproject.newsquill.topheadline_response.TopHeadlineArticle
 
 
 class TopHeadlinesAdapter(
 
 
-    private var topHeadlineList: List<TopHeadlineArticle> = emptyList()
+    private var topHeadlineList: List<Article> = emptyList()
     ) : RecyclerView.Adapter<TopHeadlinesAdapter.ViewHolder>() {
 
-    fun updateData(newList: List<TopHeadlineArticle>) {
+    fun updateData(newList: List<Article>) {
         topHeadlineList = newList
         notifyDataSetChanged()
     }

@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.finalproject.newsquill.BuildConfig.API_KEY
 import com.finalproject.newsquill.adapter.TopHeadlinesAdapter
 import com.finalproject.newsquill.api.ApiInstance
+import com.finalproject.newsquill.common.Article
 import com.finalproject.newsquill.databinding.FragmentHomeBinding
-import com.finalproject.newsquill.topheadline_response.TopHeadlineArticle
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
@@ -24,7 +24,7 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private lateinit var topHeadlinesAdapter: TopHeadlinesAdapter
-    private var topHeadlineList: List<TopHeadlineArticle> = emptyList()
+    private var topHeadlineList: List<Article> = emptyList()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -51,7 +51,7 @@ class HomeFragment : Fragment() {
             val category = "general"
 
             try {
-                val response: List<TopHeadlineArticle> = ApiInstance.retrofitService.getTopHeadline(apiKey, lang, category)
+                val response: List<Article> = ApiInstance.retrofitService.getTopHeadline(apiKey, lang, category).articles
 
                 // Update the adapter with the data
                 requireActivity().runOnUiThread {
